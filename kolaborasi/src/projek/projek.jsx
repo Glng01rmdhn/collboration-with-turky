@@ -1,38 +1,11 @@
-import React from 'react';
+import React from "react";
+import fotogalang from "../assets/galang.jpg";
 
-const MyComponent = () => {
+export default function App() {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>ini project react-nama antum</h1>
-      <button style={styles.button}>foto</button>
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center justify-start p-8">
+        <h1 className="text-4xl font-blod text-gray-800 mb-6"> ini punya galang</h1>
+        <img src={fotogalang} alt="foto galang" alt="foto besar" className=""/>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    border: '3px solid black',
-    borderRadius: '10px',
-    padding: '30px',
-    textAlign: 'center',
-    width: 'fit-content',
-    margin: '50px auto',
-    fontFamily: "'Comic Sans MS', cursive, sans-serif"
-  },
-  title: {
-    fontSize: '24px',
-    marginBottom: '20px',
-    fontWeight: 'bold',
-  },
-  button: {
-    fontSize: '20px',
-    padding: '10px 40px',
-    borderRadius: '10px',
-    border: '3px solid black',
-    backgroundColor: 'white',
-    cursor: 'pointer',
-    fontFamily: "'Comic Sans MS', cursive, sans-serif"
-  }
-};
-
-export default MyComponent;
+}
